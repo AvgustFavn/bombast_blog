@@ -1,0 +1,221 @@
+{% load static %}<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image:src" content="">
+    <meta property="og:image" content="">
+    <meta name="twitter:title" content="моя жалобная">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/1605206596114447571-128x91.png" type="image/x-icon">
+    <meta name="description" content="">
+
+
+    <title>моя жалобная</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&display=swap">
+    </noscript>
+    <link rel="preload"
+          href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap">
+    </noscript>
+    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+    <script src="{% static 'assets/smoothscroll/smooth-scroll.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.js' %}"></script>
+    <script src="{% static 'assets/theme/js/script.js' %}"></script>
+    <script src="{% static 'assets/dropdown/js/navbar-dropdown.js' %}"></script>
+    <script src="{% static 'assets/ytplayer/index.js' %}"></script>
+    <script src="{% static 'assets/formoid/formoid.min.js' %}"></script>
+    <script src="{% static 'assets/dropdown/js/navbar-dropdown.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/dropdown/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/socicon/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/web/assets/mobirise-icons2/mobirise2.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/mobirise/css/mbr-additional.css' %}">
+    {% include 'icon.html' %}
+
+
+</head>
+<body>
+
+<section data-bs-version="5.1" class="features8 cid-toTA7dON82" xmlns="http://www.w3.org/1999/html" id="features9-5t">
+
+
+    <div class="container">
+        {% for el in list_report %}
+        <div class="card">
+            <div class="card-wrapper">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-4">
+                        <div class="image-wrapper">
+                            <img src="/static/assets/images/1605206596114447571-816x577.png" alt="Mobirise Website Builder">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md">
+                        <div class="card-box">
+                            <div class="row">
+                                <div class="col-md">
+                                    <h6 class="card-title mbr-fonts-style display-5"><strong>Запрос на жалобу</strong>
+                                    </h6>
+                                    <p class="mbr-text mbr-fonts-style display-7">Комментарий: {{ el.text }}<br><a href="{{ el.path_page }}"
+                                                                                                         class="text-primary">Статья</a><br><a
+                                            href="disagree/{{ el.id }}/" class="text-primary">Удалить жалобу</a></p>
+                                </div>
+                                <div class="col-md-auto">
+
+                                    <div class="mbr-section-btn"><a href="agree/{{ el.id }}/"
+                                                                    class="btn btn-primary display-4">Подтвердить</a>
+                                    </div>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</section>
+
+<section class="witsec-mailform mbr-section cid-toTBRavAcC" id="witsec-mailform-builder-5v" data-rv-view="282">
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-12 col-lg-8">
+
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="media-container-column col-lg-8">
+                <form method="post" action="" class="mbr-form">
+                    {% csrf_token %}
+                    <input type="hidden" name="subject" value="A message from your website.">
+
+
+                    <div class="rowflexrev flex-column">
+                        <div class="row">
+                            <div class="col-md-12 form-group ws-form-alerts">
+                                <div hidden="hidden"
+                                     class="alert alert-success col-12 mbr-alert-success mbr-fonts-style display-7">
+                                    Thanks for filling out the form!
+                                </div>
+                                <div hidden="hidden"
+                                     class="alert alert-danger col-12 mbr-alert-danger mbr-fonts-style display-7">An
+                                    error occured. Please try again.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+
+                                    <div class="col-md-4 form-group col-md-6"><p
+                                            class="mbr-section-labels mbr-text mbr-fonts-style display-7">id юзера
+                                        который получит выговор</p> <input type="text" class="form-control display-7"
+                                                                           name="id" id="name" witsec-required="true">
+                                    </div>
+                                    <div class="col-md-4 form-group col-md-6"><p
+                                            class="mbr-section-labels mbr-text mbr-fonts-style display-7">Тайтл</p>
+                                        <input type="text" class="form-control display-7" name="title" id="email"
+                                               witsec-required="true"></div>
+                                    <div class="col-md-12 form-group"><p
+                                            class="mbr-section-labels mbr-text mbr-fonts-style display-7">Сообщение</p>
+                                        <textarea class="form-control display-7" name="message" id="message"
+                                                  witsec-required="true"></textarea></div>
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="g-recaptcha col-md-12 form-group"></div>
+                            <div class="col-md-12 input-group-btn align-center"><input type="submit" value="Отпрвать"
+                                                                                   class="btn btn-primary btn-form display-4">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content2 cid-toTCVZOgUc" id="content2-5y">
+
+
+    <div class="container">
+        <div class="mbr-section-head">
+            <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>4 и более жалоб</strong>
+            </h4>
+
+        </div>
+        {% for el in users %}
+        <div class="row mt-4">
+            <div class="item features-image сol-12 col-md-6 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-img">
+                        <img src="/static/assets/images/16-3-800x530.jpg" alt="Mobirise Website Builder" title="">
+                    </div>
+                    <div class="item-content">
+                        <h5 class="item-title mbr-fonts-style display-5"><a href="/user/{{ el.id_user }}/">{{ el.id_user }}</a></h5>
+
+
+                    </div>
+                    <div class="mbr-section-btn item-footer mt-2"><a href="ban/{{ el.id_user }}/" class="btn item-btn btn-primary display-7"
+                                                                     target="_blank">Бан</a></div>
+                </div>
+            </div>
+
+
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+</body>
+</html>

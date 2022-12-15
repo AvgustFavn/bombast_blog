@@ -1,0 +1,162 @@
+{% load static %}<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image:src" content="">
+    <meta property="og:image" content="">
+    <meta name="twitter:title" content="поток">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="description" content="Самые новые статьи о животных. Если нужны какие-то конкретные темы, всегда можно воспользоваться нашим поиском!">
+
+
+    <title>Все статьи сайта</title>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&display=swap">
+    </noscript>
+    <link rel="preload"
+          href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap">
+    </noscript>
+
+
+    <script src="{% static 'assets/smoothscroll/smooth-scroll.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.js' %}"></script>
+    <script src="{% static 'assets/theme/js/script.js' %}"></script>
+    <script src="{% static 'assets/dropdown/js/navbar-dropdown.js' %}"></script>
+    <script src="{% static 'assets/ytplayer/index.js' %}"></script>
+    <script src="{% static 'assets/formoid/formoid.min.js' %}"></script>
+    <script src="{% static 'assets/dropdown/js/navbar-dropdown.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/dropdown/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/socicon/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/web/assets/mobirise-icons2/mobirise2.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/mobirise/css/mbr-additional.css' %}">
+    {% include 'icon.html' %}
+
+
+</head>
+<body>
+
+{% include template_name %}
+
+<section data-bs-version="5.1" class="content5 cid-tocgabMZ4W" id="content5-4c">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+
+
+                <p class="mbr-text mbr-fonts-style display-1"><em><strong>Самые новые статьи</strong></em></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content11 cid-tn8rwWNAai" id="content11-36">
+
+    {% if login %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                <div class="mbr-section-btn align-center"><a class="btn btn-success display-4" href="/posts/create/">Написать статью</a></div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                <div class="mbr-section-btn align-center"><a class="btn btn-success display-4" href="/posts/search/">Поиск статьи</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    {% for post in posts_list %}
+    <section data-bs-version="5.1" class="features15 cid-tpZzYoOaom" id="features16-6b">
+
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg">
+                    <div class="text-wrapper">
+                        <h6 class="card-title mbr-fonts-style display-2">
+                            <strong>{{ post.title }}</strong>
+                        </h6>
+                        <p class="mbr-text mbr-fonts-style mb-4 display-4">{{ post.desc }}</p>
+                        <div class="mbr-section-btn mt-3"><a class="btn btn-success display-4" href="/posts/{{ post.id }}/">Прочитать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="image-wrapper">
+                        <img src="{{ post.pic_1 }}" alt="Mobirise Website Builder">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    {% endfor %}
+
+{% if login %}
+    {% if len_list > 15 or previous %}
+    <section data-bs-version="5.1" class="content12 cid-tochCIi0Us" id="content12-4e">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-6">
+                    <div class="mbr-section-btn align-center">
+                        {% if previous %}
+                        <a style="margin-left: auto; margin-right: auto" class="btn btn-primary display-4" href="{{ link_prev }}">Прошлая
+                        страница</a>
+                        {% endif %}
+                        {% if next %}
+                        <a style="margin-left: auto; margin-right: auto" class="btn btn-primary display-4" href="{{ link_next }}">Следующая страница</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+{% else %}
+    {% include 'window_censore.html' %}
+{% endif %}
+
+{% include 'footer.html' %}
+
+</body>
+</html>

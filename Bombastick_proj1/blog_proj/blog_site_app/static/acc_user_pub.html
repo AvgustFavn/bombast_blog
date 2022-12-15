@@ -1,0 +1,218 @@
+{% load static %}<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image:src" content="">
+    <meta property="og:image" content="">
+    <meta name="twitter:title" content="Чужой акк">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/1605206596114447571-128x91.png" type="image/x-icon">
+    <meta name="description" content="">
+
+
+    <title>Блог пользователя {{ full_name }}</title>
+    <meta name="description" content="{{ desc }}"/>
+
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&display=swap">
+    </noscript>
+    <link rel="preload"
+          href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap">
+    </noscript>
+
+
+    <script src="{% static 'assets/smoothscroll/smooth-scroll.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.js' %}"></script>
+    <script src="{% static 'assets/theme/js/script.js' %}"></script>
+    <script src="{% static 'assets/dropdown/js/navbar-dropdown.js' %}"></script>
+    <script src="{% static 'assets/ytplayer/index.js' %}"></script>
+    <script src="{% static 'assets/formoid/formoid.min.js' %}"></script>
+    <script src="{% static 'assets/dropdown/js/navbar-dropdown.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+
+
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/dropdown/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/socicon/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/web/assets/mobirise-icons2/mobirise2.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/mobirise/css/mbr-additional.css' %}">
+    {% include 'icon.html' %}
+
+
+</head>
+<body>
+{% include template_name %}
+
+{% if is_ban %}
+<br><br><br><br><br><br>
+{% include 'block_user_wind.html' %}
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% else %}
+
+{% if is_freeze %}
+{% include 'freeze_wind.html' %}
+
+{% endif %}
+
+<section data-bs-version="5.1" class="image2 cid-tmkO0EWoA0" id="image2-1c">
+
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+                <div class="image-wrapper">
+                    <img src="{{ img }}" alt="Картинку кто-то съел :(">
+                    <p class="mbr-description mbr-fonts-style mt-2 align-center display-4"></p>
+                </div>
+            </div>
+            <div class="col-12 col-lg">
+                <div class="text-wrapper">
+                    <h3 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>{{ full_name }}</strong></h3>
+                    <p class="mbr-text mbr-fonts-style display-7">{{ desc }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features21 cid-tmkRiNFF7Z" id="features22-1h">
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="item mbr-flex">
+                    <div class="icon-box w-100">
+                        <span class="step-number mbr-fonts-style display-1">{{ number_of_sub }}</span>
+                    </div>
+                    <div class="text-box">
+                        <h4 class="icon-title card-title mbr-black mbr-fonts-style display-5">Подписчиков</h4>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% if sub == True %}
+<section data-bs-version="5.1" class="content11 cid-tn8rn7W2PR" id="content11-35">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                <div class="mbr-section-btn align-center"><a class="btn btn-success display-4" href="{{ path }}">Отписаться</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% else %}
+
+<section data-bs-version="5.1" class="content11 cid-tn8rn7W2PR" id="content11-35">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                <div class="mbr-section-btn align-center"><a class="btn btn-success display-4" href="{{ path }}">Подписаться</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endif %}
+
+
+{% if posts_count > 0 %}
+<section data-bs-version="5.1" class="features6 cid-tochAbR8Ls" id="features7-4d">
+    {% for el in coll %}
+
+    <div class="container">
+        <div class="card-wrapper">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-4">
+                    {% if el.pic_1 %}
+                    <div class="image-wrapper">
+                        <img src="{{ el.pic_1 }}">
+                    </div>
+                    {% else %}
+                    <div class="image-wrapper">
+                        <img src="/static/assets/images/16-4-800x530.jpeg">
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="col-12 col-lg">
+                    <div class="text-box">
+                        <h5 class="mbr-title mbr-fonts-style display-2"><strong>{{ el.title }}</strong></h5>
+                        <p class="mbr-text mbr-fonts-style display-7">{{ el.desc }}</p>
+
+                        <div class="mbr-section-btn pt-3"><a href="/posts/{{ el.id }}/" class="btn btn-white display-4">Прочитать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+
+</section>
+{% if not_auth %}
+{% include 'window_censore.html' %}
+{% endif %}
+
+{% else %}
+
+<section data-bs-version="5.1" class="content6 cid-tmkQTMTkuH" id="content6-1g">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                <hr class="line">
+                <p class="mbr-text align-center mbr-fonts-style my-4 display-7"><em>Пока записей нету :(</em></p>
+                <hr class="line">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endif %}
+{% endif %}
+{% include 'footer.html' %}
+
+</body>
+</html>

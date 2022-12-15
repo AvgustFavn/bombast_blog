@@ -1,0 +1,62 @@
+{% load static %}
+
+<script src="{% static 'assets/witsec-mailform/mailform.js' %}"></script>
+
+
+<section class="witsec-mailform mbr-section cid-tnF5Jqsy9E" id="witsec-mailform-builder-46" data-rv-view="366">
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-12 col-lg-8">
+                <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-5">Аватарка</h2>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="media-container-column col-lg-8">
+                <form enctype="multipart/form-data" class="mbr-form" method="post">
+
+                    <input type="hidden" name="subject" value="A message from your website.">
+
+
+                    <div class="rowflexrev flex-column">
+                        <div class="row">
+                            <div class="col-md-12 form-group ws-form-alerts">
+                                <div hidden="hidden"
+                                     class="alert alert-success col-12 mbr-alert-success mbr-fonts-style display-7">
+                                    Thanks for filling out the form!
+                                </div>
+                                <div hidden="hidden"
+                                     class="alert alert-danger col-12 mbr-alert-danger mbr-fonts-style display-7">An
+                                    error occured. Please try again.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+
+                                    <div class="col-md-3 form-group col-md-12"><input class="form-control display-7"
+                                                                                      type="file" name="ava" id="name">
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="g-recaptcha col-md-12 form-group"></div>
+                            <div class="col-md-12 input-group-btn align-center"><input type="submit"
+                                                                                   class="btn btn-primary btn-form display-4" value="Установить">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

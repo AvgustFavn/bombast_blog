@@ -1,0 +1,175 @@
+{% load static %}<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image:src" content="">
+    <meta property="og:image" content="">
+    <meta name="twitter:title" content="Создание контента">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="description" content="">
+
+
+    <title>Изменение контента</title>
+
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&display=swap">
+    </noscript>
+    <link rel="preload"
+          href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap">
+    </noscript>
+
+
+    <script src="{% static 'assets/smoothscroll/smooth-scroll.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.js' %}"></script>
+    <script src="{% static 'assets/theme/js/script.js' %}"></script>
+    <script src="{% static 'assets/dropdown/js/navbar-dropdown.js' %}"></script>
+    <script src="{% static 'assets/ytplayer/index.js' %}"></script>
+    <script src="{% static 'assets/formoid/formoid.min.js' %}"></script>
+    <script src="{% static 'assets/dropdown/js/navbar-dropdown.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/witsec-mailform/mailform.js' %}"></script>
+
+
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/dropdown/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/socicon/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/web/assets/mobirise-icons2/mobirise2.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/mobirise/css/mbr-additional.css' %}">
+    {% include 'icon.html' %}
+
+
+</head>
+<body>
+
+{% include template_name %}
+
+<section class="witsec-mailform mbr-section cid-tnF2yPnYiw" id="witsec-mailform-builder-44" data-rv-view="363">
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-12 col-lg-8">
+
+                <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-1">Измените свою
+                    статью</h3>
+                <p>Заметьте - заменить, удалить или добавить картинку - невозможно </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="media-container-column col-lg-8">
+                <form enctype="multipart/form-data" action="" method="POST" class="mbr-form" >
+                    {% csrf_token %}
+                    <input type="hidden" name="subject" value="A message from your website.">
+
+
+                    <div class="rowflexrev flex-column">
+                        <div class="row">
+                            <div class="col-md-12 form-group ws-form-alerts">
+                                <div hidden="hidden"
+                                     class="alert alert-success col-12 mbr-alert-success mbr-fonts-style display-7">
+                                    Thanks for filling out the form!
+                                </div>
+                                <div hidden="hidden"
+                                     class="alert alert-danger col-12 mbr-alert-danger mbr-fonts-style display-7">An
+                                    error occured. Please try again.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+
+                                    <div class="col-md-3 form-group col-md-12"><input class="form-control display-7"
+                                                                                      type="text"
+                                                                                      value="{{ title }}"
+                                                                                      placeholder="Ваше название статьи"
+                                                                                      witsec-required="true" name="title" maxlength="64"></div>
+                                    <div class="col-md-12 form-group"><textarea wrap="" class="form-control display-7"
+                                                                                name="post_text" id="message"
+                                                                                placeholder="Статья :)"
+                                                                                witsec-required="true" maxlength="6299">{{ text }}</textarea></div>
+                                    <div class="col-md-12 form-group"><p
+                                            class="mbr-section-labels mbr-text mbr-fonts-style display-7"><strong>Материал
+                                        может содержать шокирующий контент или не предназначенный для детей?</strong>
+                                    </p>  <input type="checkbox" value="1" name="is_adult" id="1"> <label
+                                            class="mbr-section-labels mbr-text mbr-fonts-style display-7" for="1">&nbsp;Да</label><br>
+                                        <input type="checkbox" value="0" name="is_adult" id="0"> <label
+                                                class="mbr-section-labels mbr-text mbr-fonts-style display-7" for="0">Нет</label><br>
+                                    </div>
+                                    <div class="col-md-3 form-group col-md-12"><p
+                                            class="mbr-section-labels mbr-text mbr-fonts-style display-7"><strong>Теги,
+                                        через пробел, например:</strong> собаки кошки рыбки корм наполнитель история
+                                        отзыв</p> <input class="form-control display-7" type="text" name="tags"
+                                                         id="name-f4"
+                                                         placeholder="ваши теги, чтобы людям было проще найти ваш материал"
+                                                         witsec-required="true" value="{{ tags }}" maxlength="99"></div>
+                                    <div class="col-md-3 form-group col-md-12"><p
+                                            class="mbr-section-labels mbr-text mbr-fonts-style display-7">Картинка</p>
+                                        <input class="form-control display-7" type="file" name="pic_1" id="name-f5">
+                                    </div>
+                                    <div class="col-md-3 form-group col-md-12"><input class="form-control display-7"
+                                                                                      type="file" name="pic_2"
+                                                                                      id="name-f6"></div>
+                                    <div class="col-md-3 form-group col-md-12"><input class="form-control display-7"
+                                                                                      type="file" name="pic_3"
+                                                                                      id="name-f7"></div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-md-12 justify-content-center form-group">
+
+                                <p class="mbr-section-gdpr mbr-text mbr-fonts-style display-7">
+                                    <input type="checkbox" name="agree" value="1" required="">&nbsp;Нажимая вы
+                                    подтверждаете что прочитали <a href="/rules/"><strong>правила </strong></a>сайта</p>
+                            </div>
+
+                            <div class="g-recaptcha col-md-12 form-group"></div>
+                            <div class="col-md-12 input-group-btn align-center"><input type="submit" value="Переопубликовать"
+                                                                                   class="btn btn-primary btn-form display-4">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'footer.html' %}
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+{% load static %}<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image:src" content="">
+    <meta property="og:image" content="">
+    <meta name="twitter:title" content="поиск">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/1605206596114447571-128x91.png" type="image/x-icon">
+    <meta name="description" content="">
+
+
+    <title>Поиск статей</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&display=swap">
+    </noscript>
+    <link rel="preload"
+          href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap">
+    </noscript>
+
+
+    <script src="{% static 'assets/smoothscroll/smooth-scroll.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.js' %}"></script>
+    <script src="{% static 'assets/theme/js/script.js' %}"></script>
+    <script src="{% static 'assets/dropdown/js/navbar-dropdown.js' %}"></script>
+    <script src="{% static 'assets/ytplayer/index.js' %}"></script>
+    <script src="{% static 'assets/formoid/formoid.min.js' %}"></script>
+    <script src="{% static 'assets/dropdown/js/navbar-dropdown.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/dropdown/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/socicon/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/web/assets/mobirise-icons2/mobirise2.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/mobirise/css/mbr-additional.css' %}">
+    {% include 'icon.html' %}
+
+
+</head>
+<body>
+
+{% include template_name %}
+
+<section class="witsec-mailform mbr-section cid-tozLahRB3W" id="witsec-mailform-builder-56" data-rv-view="1421">
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-12 col-lg-8">
+
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="media-container-column col-lg-8">
+                <form method="post" class="mbr-form">
+                    {% csrf_token %}
+                    <input type="hidden" name="subject" value="A message from your website.">
+
+
+                    <div class="rowflexrev flex-column">
+                        <div class="row">
+                            <div class="col-md-12 form-group ws-form-alerts">
+                                <div hidden="hidden"
+                                     class="alert alert-success col-12 mbr-alert-success mbr-fonts-style display-7">
+                                    Thanks for filling out the form!
+                                </div>
+                                <div hidden="hidden"
+                                     class="alert alert-danger col-12 mbr-alert-danger mbr-fonts-style display-7">An
+                                    error occured. Please try again.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+
+                                    <div class="col-md-3 form-group col-md-12"><input class="form-control display-7"
+                                                                                      type="text" name="tags" id="name"
+                                                                                      placeholder="кошки наполнитель мочекаменная шиншилы корм линька"
+                                                                                      witsec-required="true"></div>
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="g-recaptcha col-md-12 form-group"></div>
+                            <div class="col-md-12 input-group-btn align-center"><input href="/posts/search/"
+                                                                                       type="submit"
+                                                                                       class="btn btn-primary btn-form display-4"
+                                                                                       value="Найти статью по ключевым словам"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% if list_posts %}
+{% for d in list_posts %}
+<section data-bs-version="5.1" class="features6 cid-tozLeRYqBD" id="features7-57">
+    <div class="container">
+        <div class="card-wrapper">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-4">
+                    <div class="image-wrapper">
+                        {% if d.pic_1 %}
+                        <img src="{{ d.pic_1 }}" alt="Mobirise Website Builder">
+                        {% else %}
+                        <img src="/static/assets/images/16-4-800x530.jpeg" alt="Mobirise Website Builder">
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-12 col-lg">
+                    <div class="text-box">
+                        <h5 class="mbr-title mbr-fonts-style display-2"><strong>{{ d.title }}</strong></h5>
+                        <p class="mbr-text mbr-fonts-style display-7">{{ d.desc }}</p>
+
+                        <div class="mbr-section-btn pt-3"><a href="/posts/{{ d.id }}/" class="btn btn-white display-4">Прочитать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endfor %}
+
+{% if template_name == 'menu.html' %}
+    {% include 'window_censore.html' %}
+{% endif %}
+
+{% else %}
+<section data-bs-version="5.1" class="header12 cid-tozLo016iu mbr-fullscreen" id="header12-58">
+
+
+    <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(255, 255, 255);">
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="card col-12 col-md-12 col-lg-9">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        <h1 class="card-title mbr-fonts-style mb-3 display-1"><strong>Найдите нужную вам статью</strong></h1>
+                        <p class="mbr-text mbr-fonts-style display-7">Пишите <strong>ключевые слова</strong> вместо
+                            предложений, пишите слова через пробел, не используйте специальные символы.&nbsp;<br><strong>Пример</strong>: <em>болезнь
+                                сыпь аллергия</em><br><em>Можете спросить в нашем чате, пользователи или администрация
+                                подскажут</em></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% include 'footer.html' %}
+
+</body>
+</html>
